@@ -1,0 +1,12 @@
+data_eng_exercise:
+  outputs:
+    dbt_data_eng_exercise:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: admin
+      dbname: postgres
+      schema: public
+  target: dbt_data_eng_exercise
