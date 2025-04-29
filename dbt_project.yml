@@ -1,0 +1,22 @@
+name: 'data_eng_exercise'
+version: '1.0.0'
+config-version: 2
+
+profile: 'data_eng_exercise'
+
+model-paths: ["models"]
+seed-paths: ["data"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_modules"
+
+models:
+  data_eng_exercise:
+      materialized: table
+      staging:
+        materialized: view
